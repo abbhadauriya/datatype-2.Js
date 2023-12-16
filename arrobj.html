@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arr and Obj Card</title>
+    <style>
+        body {
+            display: flex;
+            gap: 10%;
+            margin: 10%;
+
+        }
+
+        #box1 {
+            border: 1px solid black;
+            background-color: rgb(68, 65, 65);
+            color: aliceblue;
+            width: 30%;
+            height: 40vh;
+            text-align: left;
+            padding: 20px;
+
+        }
+
+        #box2 {
+            border: 1px solid black;
+            background-color: rgb(68, 65, 65);
+            color: aliceblue;
+            width: 30%;
+            height: 40vh;
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1">
+        <h1>Array</h1>
+        <h3 id="name">Name:</h3>
+        <h3 id="email">Email:</h3>
+        <h3 id="phone">Phone:</h3>
+    </div>
+    <div id="box2">
+        <h1>Object</h1>
+        <h3 id="name1">Name:</h3>
+        <h3 id="email1">Email:</h3>
+        <h3 id="phone1">Phone:</h3>
+    </div>
+
+
+    <script>
+        let stu1 = ["Abhishek Bhadauriya", "ab244@gmail.com", "89946368373"];
+        document.getElementById('name').innerHTML = stu1[0];
+        document.getElementById('email').innerHTML = stu1[1];
+        document.getElementById('phone').innerHTML = stu1[2];
+        console.log(typeof stu1);
+
+        // let stu2 = {
+        //     Name: "Abhishek Bhadauriya",
+        //     Email: "ab244@gmail.com",
+        //     Phone: "89946368373"
+        // }
+        let stu2 = {};
+        stu2.Name= "Abhishek Bhadauriya";
+        stu2.Email= "ab244@gmail.com";
+        stu2.Phone= "89946368373";
+
+        document.getElementById('name1').innerHTML = stu2.Name;
+        document.getElementById('email1').innerHTML = stu2.Email;
+        document.getElementById('phone1').innerHTML = stu2.Phone;
+        console.log(typeof stu2);
+
+
+    </script>
+
+
+</body>
+
+</html>
